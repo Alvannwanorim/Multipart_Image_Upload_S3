@@ -27,6 +27,7 @@ export class AppService {
       const { UploadId } = await this.s3Client.send(
         createMultipartUploadCommand,
       );
+
       const parts = [];
       let partNumber = 0;
 
@@ -75,7 +76,7 @@ export class AppService {
       const { UploadId } = await this.s3Client.send(
         createMultipartUploadCommand,
       );
-      console.log(UploadId);
+
       const parts = [];
       let partNumber = 0;
 
