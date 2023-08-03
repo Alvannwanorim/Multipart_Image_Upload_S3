@@ -10,9 +10,6 @@ const bucketName = 'image-processor-test';
 @Injectable()
 export class AppService {
   constructor(private readonly s3Client: S3Client) {}
-  getHello(): string {
-    return 'Hello World!';
-  }
 
   async uploadFile(file: Express.Multer.File) {
     try {
